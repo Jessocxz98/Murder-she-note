@@ -1,6 +1,10 @@
 function displayNotes() {
-  const note = new Note();
-    if(note.display());
-     return displayNotes();
+   const note = new Notebook();
+    if (note.display !== 10){
+      console.log('Hello')
+    }
+    
 };
 displayNotes();
+
+

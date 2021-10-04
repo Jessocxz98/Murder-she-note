@@ -1,6 +1,6 @@
 class Notebook {
   constructor() {
-    this.note = displayNotes;
+    this.display === 1;
   }
 
 };
