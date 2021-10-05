@@ -1,8 +1,13 @@
-class Notes { 
 
+
+//notebook = Notebook.display 
+
+ class Notes { 
+  
   constructor () {
     this.arr = []
     this.arrTitles = [] 
+    this.notebook = new Notebook; 
   }
 
   createNotes() {
@@ -15,7 +20,7 @@ class Notes {
     obj.title = title
     let message = prompt("Please enter your message", "There are three things you can never have enough of in life, Lieutenant: chocolate, friends, and the theatre");
     obj.message = message
-    this.arr.push(obj)
+    this.notebook.display.push(obj)
   }
   }
 

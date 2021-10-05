@@ -1,5 +1,5 @@
 
-const notes = ('Hello');
+const notesTest = ('Hello');
 
 const expect = (actual, expected) => {
   if (actual === expected){

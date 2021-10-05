@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const notepad = new Notes();
+  const notes = new Notes();
 
   document.querySelector('#create-note').addEventListener('click', () => {
-    notepad.createNotes();
+    notes.createNotes();
+    document.querySelector('#display-notes').innerText = notes.notebook.displayNotes();
   })
+
+  
 })
+
+
