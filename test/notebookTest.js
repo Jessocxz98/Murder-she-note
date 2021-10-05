@@ -1,10 +1,6 @@
 function displayNotes() {
-   const note = new Notebook();
-    if (note.display !== 10){
-      console.log('Hello')
-    }
-    
+  const note = new Note();
+    assert.isTrue(note.display === 0)
 };
-displayNotes();
-
+displayNotes
 
