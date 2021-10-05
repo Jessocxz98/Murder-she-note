@@ -27,3 +27,5 @@ So I can record notes with fun little pictures
 ```
 
 ## Database Domain Modelling
+![Database domain Modelling](https://github.com/Jessocxz98/Murder-she-note/blob/main/Screenshot%202021-10-04%20at%2018.40.39.png)
+![Database domain Modelling2](https://github.com/Jessocxz98/Murder-she-note/blob/main/Screenshot%202021-10-04%20at%2018.40.49.png)
