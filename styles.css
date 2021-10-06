@@ -1,0 +1,29 @@
+* {
+    margin-top: 1%;
+    margin-left: 18%;
+    padding: 1%;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+  }
+  
+  .page {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+
+
+body {
+    background-color: rgb(226, 234, 224);
+  
+}
+
+h1 {
+    color: rgb(33, 33, 35);
+    margin-left: 10px;
+}
