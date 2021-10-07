@@ -16,13 +16,10 @@ function displayAbbreviatedNote() {
 }
 displayAbbreviatedNote;
 
+function displayFullNote() {
+  
 
-/*const newarr = new Notes('Test should fail if characters are more then 20.')
-console.log(newarr);
 
-if (newarr.length > 20) {
-  throw new Error("Title is less then 20 characters!")
 
-} else
-console.log("pass");
-*/
+
+}

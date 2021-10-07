@@ -24,6 +24,15 @@ class Notebook {
     return newarr.map(s => s.substring(0,20) + '...').join("\r\n");
     }
   
+    displayFullNotes(){
+      let arrayLength = this.display.length;
+      let newarr = [];
+      for (let i = 0; i < arrayLength; i++) {
+        newarr.push(`${this.display[i].title} : ${this.display[i].message}` );
+      } 
+      return alert(newarr);
+    }
+}
 
-};
+
 
