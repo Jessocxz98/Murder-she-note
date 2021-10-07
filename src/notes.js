@@ -1,14 +1,14 @@
 
 
-//notebook = Notebook.display 
-
  class Notes { 
   
   constructor () {
     this.arr = []
     this.arrTitles = [] 
-    this.notebook = new Notebook; 
+    this.notebook = new Notebook;
+
   }
+
 
   createNotes() {
     let obj = {}
@@ -16,12 +16,12 @@
     if (this.arrTitles.includes(title)){
       alert("Ok, you've already used that name. Let's try this process again!");
     } else {
-    this.arrTitles.push(title)
-    obj.title = title
+    this.arrTitles.push(title);
+    obj.title = title;
     let message = prompt("Please enter your message", "There are three things you can never have enough of in life, Lieutenant: chocolate, friends, and the theatre");
     obj.message = message
     this.notebook.display.push(obj)
+    };
+  
   }
-  }
-
 }
