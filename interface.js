@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function submitNote(text) {
     arr[arr.length-1].message = text;
-    document.querySelector('#display-notes').innerText = notes.notebook.displayNotes();
+    document.querySelector('#display-abbreviated-notes').innerText = notes.notebook.displayAbbreviatedNote();
   }
 
   });
