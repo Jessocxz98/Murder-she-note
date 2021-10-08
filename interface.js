@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const notes = new Notes();
   let arr = notes.notebook.display,
     container1 = document.querySelector('.container1'),
-    container2 = document.querySelector('.container2');
+    container2 = document.querySelector('.container2'),
+    fullNote = document.querySelector('#full-note-message');
 
     container2.style.display = 'none'; // on load the containers/divs are hidden 
   
@@ -31,43 +32,41 @@ document.addEventListener("DOMContentLoaded", () => {
   function submitNote(text) {
     arr[arr.length-1].message = text;
     document.querySelector('#display-abbreviated-notes').innerText = notes.notebook.displayAbbreviatedNote();
+    createNotesList();
   }
 
   document.querySelector('#test-list').addEventListener('click', () => {
-    listMaker();
+    createNotesList();
   })
 
 
-  function listMaker() {
+  function createNotesList() {
     let abbrArr = notes.notebook.testDisplayAbbreviatedNote()
     console.log(abbrArr)
-    for (let i = 0; i < arr.length; i++)
-    {
+    
       let li = document.createElement('li'),
       link = document.createElement('a'),
-      description = `${abbrArr[i]}`;
+      description = `${abbrArr[abbrArr.length-1]}`;
 
       (link.textContent = description),
       (link.href = '#'),
       (link.id = description);
 
     link.addEventListener('click', (e) => {
-      displayNote(arr[i]);
+      displayNote(arr[arr.length-1]);
       e.preventDefault();
     });
 
     li.appendChild(link);
     document.getElementById('created-notes').appendChild(li);
-    }
-
+    //}
   }
-
 
 
   function displayNote(obj) {
     container1.style.display = 'none';
     container2.style.display = 'block';
-    document.querySelector('#full-note-message').textContent = obj.message
+    fullNote.textContent = obj.message
     
     document.querySelector('#back-button').addEventListener('click', (e) => {
     container1.style.display = 'block';
