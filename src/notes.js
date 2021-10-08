@@ -20,9 +20,6 @@
     };
   }
 
-  test(){
-    console.log("Test")
-  }
 
   submitNote(title,message) {
     let obj = {}
