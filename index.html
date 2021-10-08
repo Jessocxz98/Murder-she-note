@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <h1> Murder She Note</h1>
-    <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+      <h1> Murder She Note</h1>
+      <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body class="center">
-  <button id="create-note"> New Note </button>
+  <body class="center">
+  
+  <div class="container1">
+  
+    <button id="create-note"> New Note </button>
 
-  <p id="display-notes">
-  <p id="display-abbreviated-notes"> 
-    <link rel="stylesheet" href="styles.css">
+ 
+    <button id="test-list"> Show list of Test Links</button>
 
-  </p>
+    <p id="display-notes">
+    <p id="display-abbreviated-notes"> 
+      <link rel="stylesheet" href="styles.css">
+    </p>
+   
+
+    <p>
+      You can also emojify your notes, we have included a few examples for you below. 
+      To find the rest follow the link below. </p>
+      <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank">www.webfx.com</a> 👈
+    
+
+    <ul>
+      <li>:sleeping: 😴</li>
+      <li>:mask: 😷 </li>
+      <li>:scream: 😱 </li>
+      <li>:kimono: 👘 </li>
+    </ul>
+    
+    <div>
+      <ul id="created-notes" class="list-array">
+      </ul>
+    </div>
+    
+  </div>
+
+  <div class="container2">
+    <p id="full-note-message"></p>
+    <button id="back-button"> Back </button>
+  </div>
+
 
     <script src="./interface.js"></script>
     <script src="./src/notebook.js"></script>

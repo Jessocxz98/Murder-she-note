@@ -27,3 +27,23 @@ h1 {
     color: rgb(33, 33, 35);
     margin-left: 10px;
 }
+
+ul {
+  list-style-type: square;
+  color:rgb(231, 88, 31);
+  margin: 0;
+  padding: 0;
+}
+
+ul.list-array {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(20, 3, 3);
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: none;
+}
