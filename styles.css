@@ -1,11 +1,10 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   background-color: rgb(238, 233, 210);
+  margin: auto;
 }
-
 
 .button {
   margin: auto;
@@ -17,12 +16,17 @@ body {
   margin: auto;
 }
 
+.container1 {
+  margin: auto;
+  text-align: center;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 25px 0;
+  width: 60%;
+  margin: 10px 0;
 }
 
 .display-notes {
@@ -31,36 +35,40 @@ body {
   background-color: black;
 }
 * {
-    margin-top: 1%;
-    margin-left: 18%;
-    padding: 1%;
-  }
+  margin-top: 1%;
+  margin-left: 18%;
+  padding: 1%;
+}
 
-  .center {
-    margin: auto;
-    width: 50%;
-  }
-  
-  .page {
-    display: none;
-  }
-  
-  .active {
-    display: block;
-  }
+.center {
+  margin-left: 10%;
+  text-align: center;
+  width: 50%;
+}
 
+#intro-box {
+  text-align: center;
+}
+.page {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 h1 {
-    color: rgb(33, 33, 35);
-    margin-left: 10px;
+  color: rgb(33, 33, 35);
+  margin: 70;
+  text-align: center;
 }
 
 ul {
-  list-style-type: square;
-  color:rgb(231, 88, 31);
+  color: rgb(231, 88, 31);
   margin: 0;
-  padding: 0;
+  padding: 70px 0;
+  text-align: center;
+  list-style-type: none;
 }
 
 ul.list-array {
@@ -74,4 +82,3 @@ a {
   text-decoration: none;
   text-transform: none;
 }
-

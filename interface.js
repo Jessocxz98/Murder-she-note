@@ -35,25 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
     createNotesList();
   }
 
-  document.querySelector('#test-list').addEventListener('click', () => {
-    createNotesList();
-  })
 
 
   function createNotesList() {
     let abbrArr = notes.notebook.testDisplayAbbreviatedNote()
-    console.log(abbrArr)
-    
-      let li = document.createElement('li'),
-      link = document.createElement('a'),
-      description = `${abbrArr[abbrArr.length-1]}`;
+    // console.log(abbrArr)
+      let currentArr = arr[arr.length-1];
+        let li = document.createElement('li'),
+        link = document.createElement('a'),
+        description = `${abbrArr[abbrArr.length-1]}`;
 
       (link.textContent = description),
       (link.href = '#'),
       (link.id = description);
 
     link.addEventListener('click', (e) => {
-      displayNote(arr[arr.length-1]);
+      displayNote(currentArr);
       e.preventDefault();
     });
 
