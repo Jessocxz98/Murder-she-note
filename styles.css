@@ -1,3 +1,35 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgb(238, 233, 210);
+}
+
+
+.button {
+  margin: auto;
+  width: 40%;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 25px 0;
+}
+
+.display-notes {
+  width: 500px;
+  margin: auto;
+  background-color: black;
+}
 * {
     margin-top: 1%;
     margin-left: 18%;
@@ -17,10 +49,6 @@
     display: block;
   }
 
-
-body {
-    background-color: rgb(226, 234, 224);
-  
 }
 
 h1 {
@@ -43,7 +71,7 @@ ul.list-array {
 
 a {
   color: rgb(20, 3, 3);
-  font-family: helvetica;
   text-decoration: none;
   text-transform: none;
 }
+
